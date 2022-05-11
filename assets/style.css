@@ -4,3 +4,18 @@
 
 /* Header Styles */
 
+/* Hero stlye */
+
+.hero {
+    background-image: url('./Images/abstract-wavy-red-yellow-background-template.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: flex start;
+  }
+
+.hero-text h3 {
+    color: white;
+}
