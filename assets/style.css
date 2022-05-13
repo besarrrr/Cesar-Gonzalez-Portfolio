@@ -1,21 +1,166 @@
 
 /* Universal Stlyes */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 /* Header Styles */
+
+header {
+  width: 100%;
+  padding: 0 8%;
+  background-color: #b9c6ae;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-size: cover;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  padding: 28px 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3.05vw;
+}
+
+header nav {
+  margin: 15px 0;
+}
+
+header nav ul {
+  padding: 28px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 0;
+  font-weight: lighter;
+  font-size: 2.05vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative
+}
+
+header nav ul li a::after{
+content: '';
+background: white;
+width: 0%;
+height: 2px;
+position: absolute;
+bottom: 0;
+left: 0;
+transition: width 0.5s;
+}
+
+header nav ul li a:hover::after{
+  width: 100%;
+}
+
 
 /* Hero stlye */
 
 .hero {
-    background-image: url('./Images/abstract-wavy-red-yellow-background-template.jpg');
+    height: 75vh;
+    background-color: #b9c6ae;
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    align-items: flex start;
+    justify-content: center;
+    align-items: center;
   }
+
 
 .hero-text h3 {
     color: white;
+    width: 40%;
+    margin: auto;
+}
+
+/* About Me Style */
+
+.aboutme {
+  height: 95vh;
+  background-color: white;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex: 2 1;
+}
+
+.aboutmeh {
+  color:#b9c6ae;
+  font-size: 4.0vw;
+  padding: 90px;
+  box-sizing: border-box;
+  justify-content: left;
+}
+
+.aboutmep {
+  width: 40%;
+  padding: 20px;
+}
+
+
+
+footer {
+
+  width: 100%;
+  padding: 10px;
+  background-color: #b9c6ae;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-size: cover;
+  height: 5vh;
+}
+
+footer h4 {
+  color: white;
+}
+
+
+footer div a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 0;
+  font-weight: lighter;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative
+}
+
+footer div a::after{
+content: '';
+background: white;
+width: 0%;
+height: 2px;
+position: absolute;
+bottom: 0;
+left: 0;
+transition: width 0.5s;
+}
+
+footer div a:hover::after{
+  width: 100%;
+}
+
+.footer-links {
+	padding: 0 10px 0 10px; /* padding-top, padding-right, padding-bottom, padding-left */
 }
