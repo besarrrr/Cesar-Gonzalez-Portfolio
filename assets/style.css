@@ -78,13 +78,14 @@ header nav ul li a:hover::after{
 /* Hero stlye */
 
 .hero {
-    height: 75vh;
+    height: 95vh;
     background-color: #b9c6ae;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1rem solid white;
   }
 
 
@@ -92,6 +93,7 @@ header nav ul li a:hover::after{
     color: white;
     width: 40%;
     margin: auto;
+    font-size: 4.0vw;
 }
 
 /* About Me Style */
@@ -118,10 +120,81 @@ header nav ul li a:hover::after{
   padding: 20px;
 }
 
+/* Projects */
 
+.projectsection {
+  background-color: #b9c6ae;
+  justify-content: center;
+  padding: 90px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projecth {
+  color:white;
+  font-size: 4.0vw;
+  width: 100%;  
+  
+}
+
+.project-image h3 {
+  color: white;
+  font-size: 3.0vw;
+}
+
+.project-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background-color: #b9c6ae;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-image {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+
+/* contact */
+
+.info {
+  height: 20vh;
+  background-color: #b9c6ae;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-size: cover;
+  align-items: center;
+  border-top: 1rem solid white;
+
+}
+
+.contacth {
+  color: white;
+  padding: 0 30px 0 30px;
+  font-size: 3.0vh;
+  
+}
+
+.contactinfo {
+  color:white;
+
+}
+
+.numberandemail {
+  padding: 0 20px 0 20px;
+}
+
+/* Footer */
 
 footer {
-
   width: 100%;
   padding: 10px;
   background-color: #b9c6ae;
@@ -130,6 +203,7 @@ footer {
   justify-content: space-between;
   background-size: cover;
   height: 5vh;
+  border-top: solid white;
 }
 
 footer h4 {
@@ -140,7 +214,7 @@ footer h4 {
 footer div a {
   text-decoration: none;
   color: white;
-  padding: 5px 0;
+  padding: 8px 0;
   font-weight: lighter;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   position: relative
